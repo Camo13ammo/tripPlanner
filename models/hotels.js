@@ -1,4 +1,4 @@
-var mongoose - require('mongoose');
+var mongoose = require('mongoose');
 var PlaceSchema = require('./places.js').schema;
 
 var HotelSchema = new mongoose.Schema({
@@ -8,4 +8,4 @@ var HotelSchema = new mongoose.Schema({
 	amenities: [String]
 })
 
-module.exports = monogoose.models('Restaurant', RestaurantSchema);
+module.exports = mongoose.model('Hotel', HotelSchema);

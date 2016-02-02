@@ -10,14 +10,21 @@ var Activity = models.Activity;
 
 
 router.get('/', function(req, res, next){
-	Promise.all({
+	Promise.all([
 		Hotel.find({}),
 		Restaurant.find({}),
 		Activity.find({})
+	])
+	.spread(function(hotels, restaurants, activities){
+		res.render('index', {
+			restaurants: restaurants,
+			hotels: hotels,
+			activities: activities
+		})
 	})
-	.spread(function(hotels, restaurants, actvities){
-		//render some html
-	})
+	.then(null, function (err) {
+		console.log(err)
+	});
 })
 
 module.exports = router;

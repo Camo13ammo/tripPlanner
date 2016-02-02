@@ -1,4 +1,4 @@
-var mongoose - require('mongoose');
+var mongoose = require('mongoose');
 var PlaceSchema = require('./places.js').schema;
 
 var ActivitySchema = new mongoose.Schema({
@@ -7,4 +7,4 @@ var ActivitySchema = new mongoose.Schema({
 	age_rage: String
 })
 
-module.exports = monogoose.models('Activity', ActivitySchema);
+module.exports = mongoose.model('Activity', ActivitySchema);
