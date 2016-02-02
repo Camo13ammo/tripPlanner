@@ -3,3 +3,12 @@
 
 body {
   background-color: pink; }
+
+#map-canvas {
+  height: 60vh;
+  width: 79vw;
+  display: inline-block; }
+
+.panel {
+  display: inline-block;
+  width: 20 vw; }
