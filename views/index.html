@@ -1,8 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class="row" id="dropdown">
-	<div class='col-lg-4'>
+<div id="dropdown">
+	<div>
 		<label for='selectHotel'>Select a Hotel</label>
 		<select name="selectHotel">
 		{% for hotel in hotels %}
@@ -11,7 +11,7 @@
 		</select>
 	</div>
 
-	<div class='col-lg-4'>
+	<div>
 		<label for='selectRestaurant'>Select a Restaurant</label>
 		<select name="selectRestaurant">
 		{% for restaurant in restaurants %}
@@ -20,7 +20,7 @@
 		</select>
 	</div>
 
-	<div class='col-lg-4'>
+	<div>
 		<label for='selectActivity'>Select an Activity</label>
 		<select name="selectActivity">
 		{% for activity in activities %}

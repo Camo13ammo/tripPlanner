@@ -28,7 +28,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 //routing static files
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'), function(req,res,next){
+  next();
+});
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 

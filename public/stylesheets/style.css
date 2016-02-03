@@ -1,14 +1,44 @@
-#dropdown {
-  margin-top: 50px; }
-
 body {
-  background-color: pink; }
+  background-color: rgba(0, 29, 255, 0.34); }
+
+#dropdown {
+  text-align: left; }
+  #dropdown label {
+    display: block; }
 
 #map-canvas {
-  height: 60vh;
-  width: 79vw;
+  margin: 10px;
+  height: 92vh;
+  width: 60vw;
   display: inline-block; }
 
 .panel {
+  color: #9d9d9d;
+  padding: 10px;
+  background-color: #222222;
   display: inline-block;
-  width: 20 vw; }
+  width: 36.5vw;
+  margin-top: 10px;
+  vertical-align: top; }
+
+.navbar {
+  margin-bottom: 0;
+  height: 70px; }
+  .navbar li {
+    font-size: 16px;
+    padding-top: 2px; }
+
+a.navbar {
+  color: #D6D6D6; }
+
+.container {
+  margin-top: 8px; }
+
+.navbar-brand {
+  border: 1px solid white;
+  font-size: 24px;
+  padding-top: 11px;
+  padding-bottom: 17px; }
+
+.glyphicon-plane {
+  margin-right: 5px; }
